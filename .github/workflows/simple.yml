@@ -22,3 +22,10 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: python command
+        run: |
+          import paltform
+          print(paltform)
+        # this parameter specifies which shell will be used
+        # the list of all shells could be fined in the docs
+        shell: python
