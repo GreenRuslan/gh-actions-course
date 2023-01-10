@@ -1,15 +1,24 @@
+# name which will be displayed on the workflows in the actions tab in the github
 name: Shell commands
 
+# what will be used as a trigger for the action run
 on: [push]
 
 
+# the list of jobs which will be done on the workflow
 jobs:
+  # this name will be used in the list of the workflow jobs list
   run-shell-commands:
+    # defines on which operation system the job will run
     runs-on: ubuntu-latest
+    # defines the steps for the job
     steps:
+      # the list of steps.
       - name: echo a string
+        # defines which command to run. by default bash is used for the linux system
         run: echo "hello world!"
       - name: run several commands
+        # example of the several commands in one run
         run: |
           node -v
           npm -v
