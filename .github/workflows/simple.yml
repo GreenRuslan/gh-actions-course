@@ -1,6 +1,8 @@
 # name which will be displayed on the workflows in the actions tab in the github
 name: Shell commands
 
+run-name: test of the run-name key
+
 # what will be used as a trigger for the action run
 on: [push]
 
