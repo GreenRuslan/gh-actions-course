@@ -28,7 +28,7 @@ jobs:
       - name: python command
         run: |
           import platform
-          print(platform)
+          print(platform.processor())
         # this parameter specifies which shell will be used
         # the list of all shells could be fined in the docs
         shell: python
