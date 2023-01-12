@@ -35,6 +35,7 @@ jobs:
   
   run-windows-commands:
     runs-on: windows-latest
+    needs: ['run-shell-commands']
     steps:
       - name: get current location via bash
         run: pwd
