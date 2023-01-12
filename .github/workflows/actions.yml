@@ -1,0 +1,19 @@
+name: Actions workflow
+
+on: [push]
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: simple JS action
+        # id is used for referencing it ac a variable to define a certain step
+        id: greet
+        uses: actions/hello-world-javascript-action@v1.1
+        # this is used to provide the input. the variables for the names could be found in the documentation
+        with:
+          who-to-greet: Ruslan
+      - name: log the greetings time
+        # this syntax with curly braces is used for variables. The name of the variables for the outputs
+        # are defined by the actions and it could be found in the documentation.
+        run: echo "${{ steps.greet.outputs.time}}"
