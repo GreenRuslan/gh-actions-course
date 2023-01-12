@@ -32,3 +32,12 @@ jobs:
         # this parameter specifies which shell will be used
         # the list of all shells could be fined in the docs
         shell: python
+  
+  run-windows-commands:
+    runs-on: windows-latest
+    steps:
+      - name: get current location via bash
+        run: pwd
+        shell: bash
+      - name: get the current location via PowerShell
+        run: Get-Location
