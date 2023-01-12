@@ -16,4 +16,4 @@ jobs:
       - name: log the greetings time
         # this syntax with curly braces is used for variables. The name of the variables for the outputs
         # are defined by the actions and it could be found in the documentation.
-        run: echo "${{ steps.greet.outputs.time}}"
+        run: echo "This is the time of the greetins ${{ steps.greet.outputs.time}}"
