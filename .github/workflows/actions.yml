@@ -1,5 +1,7 @@
 name: Actions workflow
 
+run-name: workflow with github actions
+
 on: [push]
 
 jobs:
@@ -17,4 +19,3 @@ jobs:
         # this syntax with curly braces is used for variables. The name of the variables for the outputs
         # are defined by the actions and it could be found in the documentation.
         run: echo "This is the time of the greetins ${{ steps.greet.outputs.time}}"
-

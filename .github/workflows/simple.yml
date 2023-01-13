@@ -2,7 +2,7 @@
 name: Shell commands
 
 # this name will be displayed on the list of the actions in the github
-run-name: test of the run-name key
+run-name: First the simpliest workflow
 
 # what will be used as a trigger for the action run
 on: [push]
