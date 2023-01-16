@@ -8,6 +8,11 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      # this was added to check where is the commands runs
+      - name: run command with the list of files
+        run: |
+          pwd
+          ls -la
       - name: simple JS action
         # id is used for referencing it ac a variable to define a certain step
         id: greet
