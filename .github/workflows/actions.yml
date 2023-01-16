@@ -11,6 +11,8 @@ jobs:
       - name: simple JS action
         # id is used for referencing it ac a variable to define a certain step
         id: greet
+        # defines what will be used for the step. in this case it is a link to the repo
+        # with specifying the version which should be used
         uses: actions/hello-world-javascript-action@v1.1
         # this is used to provide the input. the variables for the names could be found in the documentation
         with:
